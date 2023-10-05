@@ -1,6 +1,10 @@
-.intro {
+.header {
   position: relative;
   padding: 32px 0;
+
+  @include mediaWidth($value: 768) {
+    padding: 93px 0;
+  }
 
   &__background {
     position: absolute;
@@ -37,10 +41,13 @@
   }
 
   &-content {
+    position: relative;
+    z-index: 5;
     max-width: 420px;
 
     @include mediaWidth($value: 768) {
       flex: 1 0 420px;
+      margin-top: 32px;
     }
 
     &__logo {
@@ -127,8 +134,20 @@
   }
 
   &-illustration {
-    position: relative;
-    margin-top: 5px;
+    @include mediaWidth($value: 768) {
+      position: absolute;
+      right: -190px;
+      top: -30px;
+      width: 80%;
+    }
+
+    @include mediaWidth($dir: max, $value: 768) {
+      margin-top: 5px;
+    }
+
+    &__content {
+      position: relative;
+    }
 
     &__image {
       width: 100%;
