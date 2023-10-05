@@ -1,0 +1,12 @@
+.footer {
+  padding: 55px 0 128px;
+  &__text {
+    font-size: 13px;
+    color: $color-grey-light;
+  }
+
+  &__link {
+    text-decoration: underline;
+    color: inherit;
+  }
+}
