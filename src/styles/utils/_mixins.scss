@@ -1,0 +1,9 @@
+@mixin mediaWidth($dir: min, $value) {
+  @if ($dir == max) {
+    $value: $value - 1;
+  }
+
+  @media (#{$dir}-width: #{$value + px}) {
+    @content;
+  }
+}

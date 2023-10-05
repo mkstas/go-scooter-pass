@@ -10,7 +10,7 @@ export default {
     }),
     ViteImageOptimizer({
       png: {
-        quality: 80,
+        quality: 100,
       },
       jpg: {
         quality: 80,
