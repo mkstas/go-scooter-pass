@@ -1,0 +1,55 @@
+.subscription {
+  padding: 48px 0;
+
+  &-container {
+    @include mediaWidth($value: 768) {
+      display: flex;
+    }
+  }
+
+  &-item {
+    @include mediaWidth($value: 768) {
+      max-width: 424px;
+      flex-grow: 0;
+    }
+
+    &__text {
+      margin: 32px 0 0;
+      font-size: 16px;
+
+      @include mediaWidth($value: 768) {
+        margin: 48px 0 0;
+        font-size: 24px;
+      }
+    }
+  }
+
+  &-illustration {
+    @include mediaWidth($dir: max, $value: 768) {
+      display: none;
+    }
+
+    @include mediaWidth($value: 768) {
+      position: relative;
+      width: 100%;
+    }
+
+    &__image {
+      @include mediaWidth($value: 768) {
+        position: absolute;
+        top: -30%;
+        left: 0;
+        transform: rotate(-15deg);
+      }
+    }
+
+    &__icon {
+      @include mediaWidth($value: 768) {
+        position: absolute;
+        top: 18%;
+        left: 22%;
+        transform: rotate(5deg);
+      }
+    }
+  }
+}
