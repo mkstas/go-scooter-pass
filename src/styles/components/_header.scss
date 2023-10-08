@@ -3,7 +3,7 @@
   padding: 32px 0;
 
   @include mediaWidth($value: 768) {
-    padding: 93px 0;
+    padding: 96px 0;
   }
 
   &__background {
@@ -14,11 +14,6 @@
     right: 0;
 
     &_primary {
-      z-index: 2;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
-    }
-
-    &_secondary {
       z-index: 1;
       opacity: 0.22;
       background: linear-gradient(
@@ -29,9 +24,14 @@
         #3f68f9 100%
       );
     }
+
+    &_secondary {
+      z-index: 2;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    }
   }
 
-  &__container {
+  &-container {
     position: relative;
     z-index: 3;
 
@@ -42,12 +42,12 @@
 
   &-content {
     position: relative;
-    z-index: 5;
-    max-width: 420px;
+    z-index: 1;
+    max-width: 424px;
 
     @include mediaWidth($value: 768) {
-      flex: 1 0 420px;
-      margin-top: 32px;
+      flex-grow: 0;
+      margin: 32px 0 0 0;
     }
 
     &__logo {
@@ -57,18 +57,17 @@
     }
 
     &__title {
-      margin-top: 32px;
       font-size: 36px;
       font-weight: 800;
 
       @include mediaWidth($value: 768) {
-        margin-top: 72px;
+        margin: 72px 0 0 0;
         font-size: 72px;
       }
     }
 
     &__text {
-      margin-top: 35px;
+      margin: 32px 0 0 0;
       font-size: 18px;
       font-weight: 500;
 
@@ -91,7 +90,7 @@
 
       &_sale {
         border-radius: 500px;
-        padding: 5px 7px;
+        padding: 4px 6px;
         font-size: 18px;
         background: radial-gradient(
           141.42% 141.42% at 100% 0%,
@@ -106,13 +105,13 @@
       }
 
       &_full {
-        padding: 7px 5px;
+        padding: 6px 4px;
         font-size: 13px;
         text-decoration: line-through;
         color: $color-grey;
 
         @include mediaWidth($value: 768) {
-          padding: 11px 12px;
+          padding: 12px;
           font-size: 16px;
         }
       }
@@ -128,7 +127,7 @@
       }
 
       @include mediaWidth($value: 768) {
-        margin-top: 44px;
+        margin: 40px 0 0 0;
       }
     }
   }
@@ -136,13 +135,13 @@
   &-illustration {
     @include mediaWidth($value: 768) {
       position: absolute;
+      top: 0;
       right: -190px;
-      top: -30px;
       width: 80%;
     }
 
     @include mediaWidth($dir: max, $value: 768) {
-      margin-top: 5px;
+      margin: 4px 0 0 0;
     }
 
     &__content {
@@ -156,20 +155,11 @@
 
     &__text {
       position: absolute;
-      width: 31%;
-      height: 31%;
-      bottom: 19%;
-      left: 24%;
+      bottom: 18%;
+      left: 25%;
+      width: calc(208 / 744 * 100%);
+      height: calc(208 / 618 * 100%);
       animation: rotate 40s linear infinite;
     }
-  }
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }

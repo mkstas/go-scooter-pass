@@ -3,14 +3,14 @@
 }
 
 .container {
-  max-width: 930px;
+  max-width: 928px;
   margin: 0 auto;
   padding: 0 32px;
 }
 
 .button {
   display: inline-block;
-  padding: 18px;
+  padding: 16px;
   background-color: $color-yellow;
   border: 0;
   border-radius: 500px;
@@ -27,5 +27,14 @@
   @include mediaWidth($value: 768) {
     padding: 24px 48px;
     font-size: 24px;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
