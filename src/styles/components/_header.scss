@@ -47,7 +47,7 @@
 
     @include mediaWidth($value: 768) {
       flex-grow: 0;
-      margin: 32px 0 0 0;
+      margin: 16px 0 0 0;
     }
 
     &__logo {

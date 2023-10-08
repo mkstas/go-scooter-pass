@@ -1,18 +1,9 @@
 .event {
-  padding: 36px 0;
+  padding: 48px 0;
 
-  &__container {
+  &-container {
     @include mediaWidth($value: 768) {
       position: relative;
-    }
-  }
-
-  &__title {
-    font-size: 32px;
-
-    @include mediaWidth($value: 768) {
-      font-size: 48px;
-      font-weight: 800;
     }
   }
 
@@ -22,55 +13,55 @@
     font-weight: 500;
 
     @include mediaWidth($value: 768) {
-      max-width: 365px;
-      margin-top: 48px;
+      max-width: 344px;
+      margin: 48px 0 0;
       font-size: 24px;
     }
 
     @include mediaWidth($value: 900) {
-      max-width: 440px;
+      max-width: 424px;
     }
   }
 
   &-illustration {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-    margin-top: -20vw;
-    transform: rotate(2deg);
+    display: none;
 
-    @include mediaWidth($value: 900) {
-      margin-top: -6vw;
+    @include mediaWidth($value: 768) {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin: -120px 0 0;
+      transform: rotate(2deg);
     }
 
     &__item {
       position: relative;
 
       &:nth-child(1) {
-        margin-top: 220px;
+        margin: 216px 0 0;
 
         & .event-illustration__icon {
-          top: -90px;
-          left: -280px;
+          top: -15%;
+          left: -42%;
           transform: rotate(-15deg);
         }
       }
 
       &:nth-child(2) {
         & .event-illustration__icon {
-          top: -215px;
-          left: 200px;
+          top: -10%;
+          left: 80%;
           transform: rotate(135deg);
         }
       }
 
       &:nth-child(4) {
-        margin-top: -220px;
+        margin: -216px 0 0;
 
         & .event-illustration__icon {
-          top: 100px;
-          left: 80px;
+          top: 22%;
+          left: 46%;
         }
       }
     }

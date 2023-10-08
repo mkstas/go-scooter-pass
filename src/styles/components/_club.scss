@@ -5,15 +5,6 @@
     padding: 0 0 64px;
   }
 
-  &__title {
-    font-size: 32px;
-    font-weight: 800;
-
-    @include mediaWidth($value: 768) {
-      font-size: 56px;
-    }
-  }
-
   &-content {
     display: grid;
     gap: 24px;

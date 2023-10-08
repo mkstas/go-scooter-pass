@@ -8,6 +8,21 @@
   padding: 0 32px;
 }
 
+.title {
+  font-size: 32px;
+  font-weight: 800;
+
+  @include mediaWidth($value: 768) {
+    font-size: 48px;
+  }
+
+  &_big {
+    @include mediaWidth($value: 768) {
+      font-size: 56px;
+    }
+  }
+}
+
 .button {
   display: inline-block;
   padding: 16px;
