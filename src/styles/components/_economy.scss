@@ -1,0 +1,79 @@
+.economy {
+  padding: 48px 0;
+
+  &-container {
+    @include mediaWidth($value: 768) {
+      display: flex;
+    }
+  }
+
+  &-illustration {
+    position: relative;
+    width: 100%;
+
+    &__image {
+      display: block;
+      width: calc(184 / 311 * 100%);
+
+      @include mediaWidth($dir: max, $value: 768) {
+        margin: 0 auto;
+      }
+
+      @include mediaWidth($value: 768) {
+        width: calc(284 / 440 * 100%);
+      }
+    }
+
+    &__text {
+      position: absolute;
+      animation: rotate 40s linear infinite;
+      top: 0;
+      left: calc(50% - 300 / 375 * 100% / 2);
+      width: calc(300 / 375 * 100%);
+
+      @include mediaWidth($dir: max, $value: 768) {
+        transform: translateX(-50%);
+      }
+
+      @include mediaWidth($value: 768) {
+        top: 0;
+        left: -15%;
+        width: 100%;
+        transform: unset;
+      }
+    }
+  }
+
+  &-item {
+    @include mediaWidth($value: 768) {
+      max-width: 424px;
+    }
+
+    @include mediaWidth($dir: max, $value: 768) {
+      margin: 32px 0 0;
+    }
+
+    &__text {
+      margin: 32px 0 0;
+      font-size: 16px;
+      font-weight: 500;
+
+      @include mediaWidth($value: 768) {
+        margin: 48px 0 0;
+        font-size: 24px;
+      }
+    }
+
+    &__button {
+      margin: 32px 0 0;
+
+      @include mediaWidth($value: 768) {
+        margin: 48px 0 0;
+      }
+
+      @include mediaWidth($dir: max, $value: 768) {
+        width: 100%;
+      }
+    }
+  }
+}
