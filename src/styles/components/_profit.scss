@@ -1,4 +1,4 @@
-.economy {
+.profit {
   padding: 48px 0;
 
   &-container {
@@ -15,31 +15,30 @@
       display: block;
       width: calc(184 / 311 * 100%);
 
-      @include mediaWidth($dir: max, $value: 768) {
-        margin: 0 auto;
-      }
-
       @include mediaWidth($value: 768) {
         width: calc(284 / 440 * 100%);
+      }
+
+      @include mediaWidth($dir: max, $value: 768) {
+        margin: 0 auto;
       }
     }
 
     &__text {
       position: absolute;
-      animation: rotate 40s linear infinite;
       top: 0;
       left: calc(50% - 300 / 375 * 100% / 2);
       width: calc(300 / 375 * 100%);
-
-      @include mediaWidth($dir: max, $value: 768) {
-        transform: translateX(-50%);
-      }
+      animation: rotate 40s linear infinite;
 
       @include mediaWidth($value: 768) {
         top: 0;
         left: -15%;
         width: 100%;
-        transform: unset;
+      }
+
+      @include mediaWidth($dir: max, $value: 768) {
+        transform: translateX(-50%);
       }
     }
   }

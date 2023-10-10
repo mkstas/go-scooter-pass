@@ -7,12 +7,14 @@
     }
   }
 
-  &__text {
+  &-text {
     margin: 32px 0 0;
     font-size: 16px;
     font-weight: 500;
 
     @include mediaWidth($value: 768) {
+      position: relative;
+      z-index: 2;
       max-width: 344px;
       margin: 48px 0 0;
       font-size: 24px;
@@ -36,43 +38,59 @@
     }
 
     &__item {
-      position: relative;
+      @include mediaWidth($value: 768) {
+        position: relative;
+      }
 
       &:nth-child(1) {
-        margin: 216px 0 0;
+        @include mediaWidth($value: 768) {
+          margin: 216px 0 0;
+        }
 
         & .event-illustration__icon {
-          top: -15%;
-          left: -42%;
-          transform: rotate(-15deg);
+          @include mediaWidth($value: 768) {
+            top: -15%;
+            left: -42%;
+            transform: rotate(-15deg);
+          }
         }
       }
 
       &:nth-child(2) {
         & .event-illustration__icon {
-          top: -10%;
-          left: 80%;
-          transform: rotate(135deg);
+          @include mediaWidth($value: 768) {
+            top: -10%;
+            left: 80%;
+            transform: rotate(135deg);
+          }
         }
       }
 
       &:nth-child(4) {
-        margin: -216px 0 0;
+        @include mediaWidth($value: 768) {
+          margin: -216px 0 0;
+        }
 
         & .event-illustration__icon {
-          top: 22%;
-          left: 46%;
+          @include mediaWidth($value: 768) {
+            top: 22%;
+            left: 46%;
+          }
         }
       }
     }
 
     &__image {
-      width: 100%;
-      border-radius: 64px;
+      @include mediaWidth($value: 768) {
+        width: 100%;
+        border-radius: 64px;
+      }
     }
 
     &__icon {
-      position: absolute;
+      @include mediaWidth($value: 768) {
+        position: absolute;
+      }
     }
   }
 
@@ -87,45 +105,59 @@
     }
 
     &__icon {
-      position: absolute;
-      top: -6%;
-      right: 0;
-      z-index: 5;
-      width: 80px;
-      transform: rotate(135deg);
+      @include mediaWidth($dir: max, $value: 768) {
+        position: absolute;
+        top: -6%;
+        right: 0;
+        z-index: 5;
+        width: 80px;
+        transform: rotate(135deg);
+      }
     }
 
     &__image {
-      width: 100%;
-      border-radius: 48px;
+      @include mediaWidth($dir: max, $value: 768) {
+        width: 100%;
+        border-radius: 48px;
+      }
     }
 
     &__navigation {
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      margin: 24px 0 0;
+      @include mediaWidth($dir: max, $value: 768) {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        margin: 24px 0 0;
+      }
     }
 
     &__button {
-      width: 48px;
-      height: 48px;
-      background: none;
-      border: none;
-      border-radius: 50%;
-      transition: box-shadow 0.3s ease-in 0s;
+      @include mediaWidth($dir: max, $value: 768) {
+        width: 48px;
+        height: 48px;
+        background: none;
+        border: none;
+        border-radius: 50%;
+        transition: box-shadow 0.3s ease-in 0s;
+      }
 
       &:hover {
-        box-shadow: 0px 4px 98px 0px rgba(255, 222, 64, 0.59);
+        @include mediaWidth($dir: max, $value: 768) {
+          box-shadow: 0px 4px 98px 0px rgba(255, 222, 64, 0.59);
+        }
       }
 
       &:disabled {
-        opacity: 70%;
-        cursor: not-allowed;
+        @include mediaWidth($dir: max, $value: 768) {
+          opacity: 70%;
+          cursor: not-allowed;
+        }
       }
 
       &_prev {
-        transform: rotate(180deg);
+        @include mediaWidth($dir: max, $value: 768) {
+          transform: rotate(180deg);
+        }
       }
     }
   }

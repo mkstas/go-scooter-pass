@@ -1,8 +1,14 @@
-.club {
+.benefit {
   padding: 48px 0;
 
   @include mediaWidth($value: 768) {
     padding: 0 0 64px;
+  }
+
+  &-title {
+    @include mediaWidth($value: 768) {
+      font-size: 56px;
+    }
   }
 
   &-content {

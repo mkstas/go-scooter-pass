@@ -1,4 +1,4 @@
-.wrapper {
+.app {
   overflow: hidden;
 }
 
@@ -14,12 +14,6 @@
 
   @include mediaWidth($value: 768) {
     font-size: 48px;
-  }
-
-  &_big {
-    @include mediaWidth($value: 768) {
-      font-size: 56px;
-    }
   }
 }
 

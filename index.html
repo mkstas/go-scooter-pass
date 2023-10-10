@@ -7,93 +7,88 @@
     <title>Яндекс Go</title>
   </head>
   <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="header__background header__background_primary"></div>
-        <div class="header__background header__background_secondary"></div>
-        <div class="header-container container">
-          <div class="header-content">
+    <div class="app">
+      <header class="app-header">
+        <div
+          class="app-header__background app-header__background_primary"></div>
+        <div
+          class="app-header__background app-header__background_secondary"></div>
+        <div class="app-header-container container">
+          <div class="app-header-content">
             <img
-              class="header-content__logo"
+              class="app-header-content__logo"
               src="/src/images/icons/logo.svg"
-              alt="Логотип Яндекс Go"
-            />
-            <h1 class="header-content__title">Вступайте в клуб Самокатов</h1>
-            <p class="header-content__text">
+              alt="Логотип Яндекс Go" />
+            <h1 class="app-header-content__title">
+              Вступайте в клуб Самокатов
+            </h1>
+            <p class="app-header-content__text">
               Купите абонемент, чтобы стать частью клуба в новом сезоне–2024. 8
               месяцев за
-              <span class="header-content__price">
-                <span class="header-content__price_sale">499₽</span>
-                <span class="header-content__price_full">3190₽</span>
+              <span class="app-header-content__price">
+                <span class="app-header-content__price_sale">499₽</span>
+                <span class="app-header-content__price_full">3190₽</span>
               </span>
             </p>
             <a
-              class="header-content__button button"
-              href="https://go.yandex/ru_ru/lp/rides/scooter"
-            >
+              class="app-header-content__button button"
+              href="https://go.yandex/ru_ru/lp/rides/scooter">
               Стать частью клуба
             </a>
           </div>
-          <div class="header-illustration">
-            <div class="header-illustration__content">
+          <div class="app-header-illustration">
+            <div class="app-header-illustration__content">
               <img
-                class="header-illustration__image"
+                class="app-header-illustration__image"
                 src="/src/images/scooter-1.png"
-                alt="Сообщество любителей самокатов"
-              />
+                alt="Сообщество любителей самокатов" />
               <img
-                class="header-illustration__text"
+                class="app-header-illustration__text"
                 src="/src/images/club-text.png"
-                alt="Сообщество любителей самокатов"
-              />
+                alt="Сообщество любителей самокатов" />
             </div>
           </div>
         </div>
       </header>
 
-      <main>
-        <section class="club">
+      <main class="app-content">
+        <section class="benefit">
           <div class="container">
-            <h2 class="title title_big">Вот что даёт участие в клубе</h2>
-
-            <div class="club-content">
-              <div class="club-item">
+            <h2 class="benefit-title title">Вот что даёт участие в клубе</h2>
+            <div class="benefit-content">
+              <div class="benefit-item">
                 <img
-                  class="club-item__icon"
+                  class="benefit-item__icon"
                   src="/src/images/icons/currency.svg"
-                  alt="0 рублей"
-                />
-                <p class="club-item__text">0 ₽ за старт в каждой поездке</p>
+                  alt="0 рублей" />
+                <p class="benefit-item__text">0 ₽ за старт в каждой поездке</p>
               </div>
-              <div class="club-item">
+              <div class="benefit-item">
                 <img
-                  class="club-item__icon"
+                  class="benefit-item__icon"
                   src="/src/images/icons/scooter.svg"
-                  alt="Самокат"
-                />
-                <p class="club-item__text">
+                  alt="3 cамоката" />
+                <p class="benefit-item__text">
                   Катаетесь с друзьями? Бронируйте до трёх самокатов с аккаунта
                   с абонементом — так у всех будет бесплатный старт
                 </p>
               </div>
-              <div class="club-item">
+              <div class="benefit-item">
                 <img
-                  class="club-item__icon"
+                  class="benefit-item__icon"
                   src="/src/images/icons/clock.svg"
-                  alt="Бесплатная пауза"
-                />
-                <p class="club-item__text">
+                  alt="Бесплатная пауза" />
+                <p class="benefit-item__text">
                   Бесплатная пауза 15 минут в поездке — например, чтобы зайти за
                   кофе или передохнуть
                 </p>
               </div>
-              <div class="club-item">
+              <div class="benefit-item">
                 <img
-                  class="club-item__icon"
+                  class="benefit-item__icon"
                   src="/src/images/icons/battery.svg"
-                  alt="Батарея"
-                />
-                <p class="club-item__text">
+                  alt="Недостаточно заряда" />
+                <p class="benefit-item__text">
                   Если самокат недостаточно заряжен или с ним неудобно
                   переходить дорогу, замените по пути на другой — это бесплатно
                 </p>
@@ -106,7 +101,7 @@
           <div class="event-container container">
             <h2 class="title">Эксклюзивный доступ к событиям Самокатов</h2>
 
-            <p class="event__text">
+            <p class="event-text">
               С абонементом — у вас доступ к специальным мероприятиям, скидки и
               классный мерч. В 2023 году мы танцевали на Даче Плюс с Антохой MC,
               катались на самокатах с Сергеем Мезенцевым и слушали хор Attaque
@@ -118,44 +113,37 @@
                 <img
                   class="event-illustration__image"
                   src="/src/images/event-01.jpg"
-                  alt="Событие"
-                />
+                  alt="Событие" />
                 <img
                   class="event-illustration__icon"
                   src="/src/images/mark.png"
-                  alt="Иконка"
-                />
+                  alt="Иконка" />
               </div>
               <div class="event-illustration__item">
                 <img
                   class="event-illustration__image"
                   src="/src/images/event-02.jpg"
-                  alt="Событие"
-                />
+                  alt="Событие" />
                 <img
                   class="event-illustration__icon"
                   src="/src/images/lines.png"
-                  alt="Иконка"
-                />
+                  alt="Иконка" />
               </div>
               <div class="event-illustration__item">
                 <img
                   class="event-illustration__image"
                   src="/src/images/event-03.jpg"
-                  alt="Событие"
-                />
+                  alt="Событие" />
               </div>
               <div class="event-illustration__item">
                 <img
                   class="event-illustration__image"
                   src="/src/images/event-04.jpg"
-                  alt="Событие"
-                />
+                  alt="Событие" />
                 <img
                   class="event-illustration__icon"
                   src="/src/images/shaker.png"
-                  alt="Иконка"
-                />
+                  alt="Иконка" />
               </div>
             </div>
 
@@ -163,37 +151,32 @@
               <img
                 class="event-slider__icon"
                 src="/src/images/lines.png"
-                alt="Иконка"
-              />
+                alt="Иконка" />
               <div class="swiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <img
                       class="event-slider__image"
                       src="/src/images/event-01.jpg"
-                      alt="Событие"
-                    />
+                      alt="Событие" />
                   </div>
                   <div class="event-slider__item swiper-slide">
                     <img
                       class="event-slider__image"
                       src="/src/images/event-02.jpg"
-                      alt="Событие"
-                    />
+                      alt="Событие" />
                   </div>
                   <div class="event-slider__item swiper-slide">
                     <img
                       class="event-slider__image"
                       src="/src/images/event-03.jpg"
-                      alt="Событие"
-                    />
+                      alt="Событие" />
                   </div>
                   <div class="event-slider__item swiper-slide">
                     <img
                       class="event-slider__image"
                       src="/src/images/event-04.jpg"
-                      alt="Событие"
-                    />
+                      alt="Событие" />
                   </div>
                 </div>
               </div>
@@ -201,73 +184,66 @@
                 <button class="event-slider__button event-slider__button_prev">
                   <img
                     src="/src/images/icons/action.svg"
-                    alt="Предыдущий слайд"
-                  />
+                    alt="Предыдущий слайд" />
                 </button>
                 <button class="event-slider__button event-slider__button_next">
                   <img
                     src="/src/images/icons/action.svg"
-                    alt="Следующий слайд"
-                  />
+                    alt="Следующий слайд" />
                 </button>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="subscription">
-          <div class="subscription-container container">
-            <div class="subscription-item">
+        <section class="point">
+          <div class="point-container container">
+            <div class="point-item">
               <h2 class="title">
                 Купить абонемент и вступить в клуб смогут те, кто в Плюсе
               </h2>
-              <p class="subscription-item__text">
+              <p class="point-item__text">
                 За каждую поездку на самокатах такие пользователи получают
                 кешбэк баллами. Баллы можно тратить на поездки на самокатах и
                 такси с Яндекс Go, покупки и заказы в других сервисах Яндекса
               </p>
             </div>
-            <div class="subscription-illustration">
+            <div class="point-illustration">
               <img
-                class="subscription-illustration__image"
+                class="point-illustration__image"
                 src="/src/images/scooter-2.png"
-                alt="Абонемент"
-              />
+                alt="Абонемент" />
               <img
-                class="subscription-illustration__icon"
+                class="point-illustration__icon"
                 src="/src/images/plus.png"
-                alt="Абонемент"
-              />
+                alt="Абонемент" />
             </div>
           </div>
         </section>
 
-        <section class="economy">
-          <div class="economy-container container">
-            <div class="economy-illustration">
+        <section class="profit">
+          <div class="profit-container container">
+            <div class="profit-illustration">
               <img
-                class="economy-illustration__image"
+                class="profit-illustration__image"
                 src="/src/images/scooter-3.png"
-                alt="Экономия"
-              />
+                alt="Экономия" />
               <img
-                class="economy-illustration__text"
+                class="profit-illustration__text"
                 src="/src/images/club-text.png"
-                alt="Экономия"
-              />
+                alt="Экономия" />
             </div>
-            <div class="economy-item">
+            <div class="profit-item">
               <h2 class="title">
                 80 % наших пользователей уже в клубе и экономят на поездках
               </h2>
-              <p class="economy-item__text">
+              <p class="profit-item__text">
                 Присоединяйтесь — опция начнёт действовать в начале сезона–2024.
                 Об открытии сезона предупредим заранее, чтобы вы были готовы
               </p>
               <a
-                class="economy-item__button button"
-                href="https://go.yandex/ru_ru/lp/rides/scooter"
-              >
+                class="profit-item__button button"
+                href="https://go.yandex/ru_ru/lp/rides/scooter">
                 Хочу абонемент
               </a>
             </div>
@@ -275,25 +251,27 @@
         </section>
       </main>
 
-      <footer class="footer">
+      <footer class="app-footer">
         <div class="container">
-          <p class="footer__text">
+          <p class="app-footer__text">
             Доп. опция «Абонемент на самокаты» на 8 месяцев (240 дней)
             активируется автоматически с момента старта сезона 2024 г. самокатов
             Яндекс Go, далее предусмотрено автопродление доп.опции за 399
             руб./мес. Сертификат на доп.опцию «Абонемент на самокаты» на 8
             месяцев оформляется на условиях документа
-            <a class="footer__link" href="yandex.ru/legal/scooters_seasonpass"
+            <a
+              class="app-footer__link"
+              href="yandex.ru/legal/scooters_seasonpass"
               >yandex.ru/legal/scooters_seasonpass</a
             >. Доп.опция доступна пользователям с активной подпиской (условия
             подписки:
             <a
-              class="footer__link"
+              class="app-footer__link"
               href="yandex.ru/legal/yandex_plus_conditions"
               >yandex.ru/legal/yandex_plus_conditions</a
             >), есть ограничения, подробнее:
             <a
-              class="footer__link"
+              class="app-footer__link"
               href="yandex.ru/legal/yandex_plus_opzii_list"
               >yandex.ru/legal/yandex_plus_opzii_list</a
             >. В случае отсутствия у пользователя активной подписки на дату
@@ -301,7 +279,8 @@
             Яндекс Плюс бесплатно, далее автопродление — 299 руб./мес.
             Электросамокаты Яндекс Go — сервис аренды электросамокатов на
             условиях:
-            <a class="footer__link" href="clck.ru/gwDGn">clck.ru/gwDGn</a>. 0+
+            <a class="app-footer__link" href="clck.ru/gwDGn">clck.ru/gwDGn</a>.
+            0+
           </p>
         </div>
       </footer>

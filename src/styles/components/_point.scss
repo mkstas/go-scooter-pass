@@ -1,4 +1,4 @@
-.subscription {
+.point {
   padding: 48px 0;
 
   &-container {
@@ -10,7 +10,6 @@
   &-item {
     @include mediaWidth($value: 768) {
       max-width: 424px;
-      flex-grow: 0;
     }
 
     &__text {
