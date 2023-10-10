@@ -49,8 +49,8 @@
 
         & .event-illustration__icon {
           @include mediaWidth($value: 768) {
-            top: -15%;
-            left: -42%;
+            top: -25%;
+            left: -58%;
             transform: rotate(-15deg);
           }
         }
@@ -59,8 +59,8 @@
       &:nth-child(2) {
         & .event-illustration__icon {
           @include mediaWidth($value: 768) {
-            top: -10%;
-            left: 80%;
+            top: -33%;
+            left: 47%;
             transform: rotate(135deg);
           }
         }
@@ -73,8 +73,8 @@
 
         & .event-illustration__icon {
           @include mediaWidth($value: 768) {
-            top: 22%;
-            left: 46%;
+            top: 15%;
+            left: 20%;
           }
         }
       }
@@ -101,16 +101,16 @@
 
     @include mediaWidth($dir: max, $value: 768) {
       position: relative;
-      margin: 48px 0 0;
+      margin: 48px -16px 0;
     }
 
     &__icon {
       @include mediaWidth($dir: max, $value: 768) {
         position: absolute;
-        top: -6%;
-        right: 0;
+        top: -28%;
+        right: -14%;
         z-index: 5;
-        width: 80px;
+        width: calc(180 / 311 * 100%);
         transform: rotate(135deg);
       }
     }
