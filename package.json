@@ -17,5 +17,8 @@
     "vite-plugin-checker": "^0.6.2",
     "vite-plugin-image-optimizer": "^1.1.7",
     "vite-plugin-inspect": "^0.7.40"
+  },
+  "dependencies": {
+    "swiper": "^10.3.1"
   }
 }
