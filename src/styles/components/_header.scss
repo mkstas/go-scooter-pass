@@ -17,13 +17,7 @@
     &_primary {
       z-index: 1;
       opacity: 0.22;
-      background: linear-gradient(
-        90deg,
-        #ff5c4d 0%,
-        #eb469f 25%,
-        #8341ef 72%,
-        #3f68f9 100%
-      );
+      background: linear-gradient(90deg, #ff5c4d 0%, #eb469f 25%, #8341ef 72%, #3f68f9 100%);
     }
 
     &_secondary {
@@ -98,22 +92,14 @@
       display: inline-flex;
       align-items: center;
       border-radius: 500px;
-      background: linear-gradient(
-          0deg,
-          rgba(241, 241, 241, 0.6) 0%,
-          rgba(241, 241, 241, 0.6) 100%
-        ),
+      background: linear-gradient(0deg, rgba(241, 241, 241, 0.6) 0%, rgba(241, 241, 241, 0.6) 100%),
         radial-gradient(141.42% 141.42% at 100% 0%, #e0b8ff 0%, #b6b9ff 100%);
 
       &_sale {
         border-radius: 500px;
         padding: 4px 6px;
         font-size: 18px;
-        background: radial-gradient(
-          141.42% 141.42% at 100% 0%,
-          #e0b8ff 0%,
-          #b6b9ff 100%
-        );
+        background: radial-gradient(141.42% 141.42% at 100% 0%, #e0b8ff 0%, #b6b9ff 100%);
 
         @include mediaWidth($value: 768) {
           padding: 8px 12px;
