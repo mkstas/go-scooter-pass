@@ -1,27 +1,31 @@
-# Go Scooter pass
+# Верстка Go Scooter pass
 
-Верстка, выполенная по макету от Яндекс: [макет в figma](https://www.figma.com/file/W9gacDyHMIG55KuDwAN2Tl/go-scooter-pass?type=design&mode=design&t=HKZvMka1zycPedt2-0)\
+## Описание
+
+Верстка, выполенная по макету Figma от Яндекс: https://www.figma.com/file/W9gacDyHMIG55KuDwAN2Tl/go-scooter-pass?type=design&mode=design&t=HKZvMka1zycPedt2-0\
 Проект размещен по адресу: https://vanilla-go-scooter-pass.vercel.app/
 
-### Установка проекта
+## Установка
+
+### Инсталляция
 
 ```sh
 npm install
 ```
 
-### Сборка для разработки
+### Режим разработки
 
 ```sh
 npm run dev
 ```
 
-### Сборка готового проекта
+### Сборка приложения
 
 ```sh
 npm run build
 ```
 
-### Предпросмотр готового проекта
+### Предпросмотр собранного проекта
 
 ```sh
 npm run preview
